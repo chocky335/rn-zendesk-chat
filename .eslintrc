@@ -1,0 +1,87 @@
+{
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true,
+      "classes": true
+    },
+    "sourceType": "module"
+  },
+  "rules": {
+
+    // WARNINGS
+    "comma-dangle": [1, "always-multiline"],
+    "flowtype/define-flow-type": 1,
+    "flowtype/use-flow-type": 1,
+    "new-cap": 1,
+    "no-console": 2,
+    "react/jsx-uses-react": 1,
+    "strict": 1,
+    "complexity": [1, 8],
+    "max-params": [1, 4],
+    "max-statements": [1, 20],
+
+    // ERRORS
+    "flowtype/require-valid-file-annotation": [2, "always", { "annotationStyle": "line" } ],
+    "flowtype/no-primitive-constructor-types": 2,
+    "flowtype/no-types-missing-file-annotation": 2,
+    "flowtype/no-unused-expressions": 2,
+    "flowtype/no-weak-types": [2, {
+            "any": false,
+            "Object": true,
+            "Function": true
+        }],
+    "flowtype/sort-keys": 2,
+
+    "max-depth": [2, 3],
+    "max-nested-callbacks": [2, 3],
+    "no-unused-vars": ["error", { "args": "none" }],
+    "indent": [1, 2, { "SwitchCase": 1 }], // 4 spaces
+    "react/jsx-filename-extension": ["error", { "extensions": [".js", ".jsx"] }], // React Native has JSX in JS files
+    "global-require": "off", // React Native includes images via require("../images/example.png")
+    "no-await-in-loop": 2,
+    "no-undef": 2,
+    "no-unreachable": ["error"],
+    "quotes": ["error", "double"],
+    "react-native/no-color-literals": 2,
+    "react-native/no-inline-styles": 2,
+    "react-native/no-unused-styles": 2,
+    "react/react-in-jsx-scope": 2,
+    "react/jsx-uses-vars": 2,
+    "jsx-quotes": [ "error", "prefer-double" ],
+    "semi": [2, "never"],
+    "max-len": ["error", { "code": 100, "ignoreComments": true, "ignoreStrings": true }],
+    "no-use-before-define": ["error", { "functions": false, "classes": false }],
+
+    // DISABLED
+    "no-underscore-dangle": 0,
+    "arrow-parens": 0,
+    "react-native/split-platform-components": 0,
+    "react/require-default-props": 0,
+    "jsx-a11y/href-no-hash": 0,
+    "react/jsx-indent": 0,
+    "import/extensions": 0,
+    "import/no-unresolved": 0,
+    "import/no-extraneous-dependencies": 0,
+    "no-void": 0,
+    "import/prefer-default-export": 0
+  },
+  "plugins": [
+    "react",
+    "react-native",
+    "flowtype",
+    "jest",
+    "babel"
+  ],
+  "env": {
+    "jest/globals": true,
+    "browser": true,
+    "es6": true
+  },
+  "extends": [
+    "plugin:jest/recommended",
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "airbnb"
+  ],
+}
