@@ -23,6 +23,8 @@
 		A62D4E48655F7CFF15F292F9 /* Pods_ZendeskChatSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C1E2821F30096B1605A74E0 /* Pods_ZendeskChatSDK.framework */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
 		FE9DB7E8206F17CA00FF7C3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9DB7E7206F17CA00FF7C3A /* AppDelegate.swift */; };
+		FE9DB80F206F1ACF00FF7C3A /* ZendeskChatManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9DB80E206F1ACF00FF7C3A /* ZendeskChatManager.swift */; };
+		FE9DB811206F206400FF7C3A /* ZendeskChatManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FE9DB810206F206400FF7C3A /* ZendeskChatManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -311,6 +313,8 @@
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
 		FE9DB7E6206F17C900FF7C3A /* ZendeskChatSDK-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZendeskChatSDK-Bridging-Header.h"; sourceTree = "<group>"; };
 		FE9DB7E7206F17CA00FF7C3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ZendeskChatSDK/AppDelegate.swift; sourceTree = "<group>"; };
+		FE9DB80E206F1ACF00FF7C3A /* ZendeskChatManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZendeskChatManager.swift; sourceTree = "<group>"; };
+		FE9DB810206F206400FF7C3A /* ZendeskChatManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZendeskChatManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -409,6 +413,8 @@
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				FE9DB7E7206F17CA00FF7C3A /* AppDelegate.swift */,
 				FE9DB7E6206F17C900FF7C3A /* ZendeskChatSDK-Bridging-Header.h */,
+				FE9DB810206F206400FF7C3A /* ZendeskChatManager.m */,
+				FE9DB80E206F1ACF00FF7C3A /* ZendeskChatManager.swift */,
 			);
 			name = ZendeskChatSDK;
 			sourceTree = "<group>";
@@ -987,6 +993,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE9DB7E8206F17CA00FF7C3A /* AppDelegate.swift in Sources */,
+				FE9DB811206F206400FF7C3A /* ZendeskChatManager.m in Sources */,
+				FE9DB80F206F1ACF00FF7C3A /* ZendeskChatManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
