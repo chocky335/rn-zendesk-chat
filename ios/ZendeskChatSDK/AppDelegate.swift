@@ -5,6 +5,7 @@
 //  Created by Bogdan Pomogaibo on 3/31/18.
 //  Copyright © 2018 Facebook. All rights reserved.
 //
+import ZDCChat
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -22,6 +23,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     self.window = UIWindow(frame: UIScreen.main.bounds)
     self.window?.rootViewController = rootViewController
     self.window?.makeKeyAndVisible()
+    
+    ZDCLog.enable(true)
+    ZDCLog.setLogLevel(.debug)
     
     return true
   }
